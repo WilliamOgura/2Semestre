@@ -5,36 +5,45 @@
 	xmlns:h="http://java.sun.com/jsf/html">
 
 <h:head>
-	<h2>Cadastro de Aluno</h2>
+
 </h:head>
 <body>
+	
+	<f:loadBundle var="a" basename="aluno"/>
+
+	<h1>#{a.page_title}</h1>
 	<h:form>
-		<h:panelGrid columns="2">
-			<div>
-				<h:outputLabel value="RM" for="rm" />
-				<h:inputText value="#{alunoBean.aluno.rm}" id="rm" />
-			</div>
-			<div>
-				<h:outputLabel value="Nome" for="nome" />
-				<h:inputText value="#{alunoBean.aluno.nome}" id="nome" />
-			</div>
-			<div>
-				<h:outputLabel value="Data Nascimento" for="dt" />
-					<h:inputText value="#{alunoBean.aluno.dataNascimento}" id="dt">
+	<h:messages />
+		<h:panelGrid columns="3">
+			
+				<h:outputLabel value="#{a.lbl_rm}" for="rm" />
+				<h:inputText required="true" requiredMessage="Campo Obrigatório !" value="#{alunoBean.aluno.rm}" id="rm">
+					<f:validateLongRange minimum="1" maximum="99999" />
+				</h:inputText>
+				<h:message for="rm"/>
+			
+				<h:outputLabel value="#{a.lbl_name}" for="nome" />
+				<h:inputText  value="#{alunoBean.aluno.nome}" id="nome" />
+				<h:message for="nome"/>
+			
+				<h:outputLabel value="#{a.lbl_date}" for="dt" />
+					<h:inputText required="true" requiredMessage="Campo Obrigatório !" value="#{alunoBean.aluno.dataNascimento.time}" id="dt">
 						<f:convertDateTime pattern="dd/MM/yyyy"/>
 					</h:inputText>
-			</div>
-			<div>
-				<h:outputLabel value="CPF" for="cpf" />
-				<h:inputText value="#{alunoBean.aluno.cpf}" id="cpf" />
-			</div>
-			<div>
-				<h:outputLabel value="Email" for="email" />
-				<h:inputText value="#{alunoBean.aluno.email}" id="email" />
-			</div>
-			<div>
+					<h:message for="dt"/>
+		
+				<h:outputLabel value="#{a.lbl_cpf}" for="cpf" />
+				<h:inputText required="true" requiredMessage="Campo Obrigatório !" value="#{alunoBean.aluno.cpf}" id="cpf">
+					<f:validateLength minimum="12" maximum="14" />
+				</h:inputText>
+				<h:message for="cpf"/>
+			
+				<h:outputLabel value="#{a.lbl_email}" for="email" />
+				<h:inputText validator="#{alunoBean.validarEmail}"  value="#{alunoBean.aluno.email}" id="email" />
+				<h:message for="email"/>
+				
 				<h:commandButton action="#{alunoBean.cadastrar()}" value="Cadastrar" />
-			</div>
+		
 
 		</h:panelGrid>
 	</h:form>

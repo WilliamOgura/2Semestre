@@ -5,14 +5,20 @@ import java.util.Calendar;
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
+import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
+import javax.faces.validator.ValidatorException;
 
 import br.com.fiap.bo.AlunoBO;
 import br.com.fiap.entity.Aluno;
 
 @ManagedBean
 public class AlunoBean {
+	
+	private Aluno aluno;
 
+	private AlunoBO bo;
+	
 	@PostConstruct
 	private void init(){
 		aluno = new Aluno();
@@ -21,6 +27,19 @@ public class AlunoBean {
 		bo=new AlunoBO();
 	}
 	
+	//Método para validar email
+	public void validarEmail(FacesContext context, 
+					UIComponent component, Object value)
+								throws ValidatorException{
+		String email = value.toString();
+		if(bo.validarEmailExistente(email)){
+			throw new ValidatorException(
+					new FacesMessage("Email já cadastrado"));
+		}
+		
+	
+	}
+		
 	public String cadastrar(){
 		FacesMessage msg;
 		try {
@@ -35,10 +54,7 @@ public class AlunoBean {
 		return "aluno?faces-redirect=true";
 		
 	}
-	
-	private Aluno aluno;
 
-	private AlunoBO bo;
 	
 	
 	public Aluno getAluno() {

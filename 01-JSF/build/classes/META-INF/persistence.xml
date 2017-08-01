@@ -10,7 +10,7 @@
 			<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
 			<property name="javax.persistence.jdbc.user" value="rm75941"/>
 			<property name="hibenate.default_schema" value="rm75941"/>
-			<property name="javax.persistence.jdbc.password" value="1428liviwilli"/>
+			<property name="javax.persistence.jdbc.password" value="281298"/>
 			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl"/>
 		</properties>	
 	</persistence-unit>

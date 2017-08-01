@@ -73,4 +73,10 @@ public class AlunoBO {
 			em.close();
 		}
 	}
+
+	public boolean validarEmailExistente(String email) {
+		EntityManager em = factory.createEntityManager();
+		AlunoDAO dao = new AlunoDAOImpl(em);
+		return dao.validarEmailExistente(email);
+	}
 }

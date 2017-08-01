@@ -101,30 +101,46 @@
   <core validator-id="jsf-verification"/>
   <core validator-id="jboss.jsf.core"/>
   <el>
-   <linked-el length="24" name="%0" offset="472" path="%1"/>
-   <linked-el length="26" name="%0" offset="599" path="%1"/>
-   <linked-el length="25" name="%0" offset="945" path="%1"/>
-   <linked-el length="36" name="%0" offset="740" path="%1"/>
-   <linked-el length="27" name="%0" offset="1076" path="%1"/>
-   <linked-el length="24" name="%2" offset="472" path="%1"/>
-   <linked-el length="26" name="%2" offset="599" path="%1"/>
-   <linked-el length="25" name="%2" offset="945" path="%1"/>
-   <linked-el length="27" name="%2" offset="1167" path="%1"/>
-   <linked-el length="36" name="%2" offset="740" path="%1"/>
-   <linked-el length="27" name="%2" offset="1076" path="%1"/>
-   <linked-el length="24" name="%3" offset="472" path="%1"/>
-   <linked-el length="26" name="%3" offset="599" path="%1"/>
-   <linked-el length="25" name="%3" offset="945" path="%1"/>
-   <linked-el length="27" name="%3" offset="1167" path="%1"/>
-   <linked-el length="36" name="%3" offset="740" path="%1"/>
-   <linked-el length="27" name="%3" offset="1076" path="%1"/>
+   <linked-el length="15" name="%0" offset="382" path="%1"/>
+   <linked-el length="16" name="%0" offset="764" path="%1"/>
+   <linked-el length="14" name="%0" offset="491" path="%1"/>
+   <linked-el length="16" name="%0" offset="918" path="%1"/>
+   <linked-el length="17" name="%0" offset="1476" path="%1"/>
+   <linked-el length="15" name="%0" offset="1203" path="%1"/>
+   <linked-el length="25" name="%2" offset="1309" path="%1"/>
+   <linked-el length="41" name="%2" offset="1025" path="%1"/>
+   <linked-el length="24" name="%2" offset="595" path="%1"/>
+   <linked-el length="26" name="%2" offset="819" path="%1"/>
+   <linked-el length="27" name="%2" offset="1571" path="%1"/>
+   <linked-el length="25" name="%3" offset="1309" path="%1"/>
+   <linked-el length="27" name="%3" offset="1677" path="%1"/>
+   <linked-el length="41" name="%3" offset="1025" path="%1"/>
+   <linked-el length="29" name="%3" offset="1536" path="%1"/>
+   <linked-el length="24" name="%3" offset="595" path="%1"/>
+   <linked-el length="26" name="%3" offset="819" path="%1"/>
+   <linked-el length="27" name="%3" offset="1571" path="%1"/>
+   <linked-el length="15" name="%4" offset="382" path="%1"/>
+   <linked-el length="16" name="%4" offset="764" path="%1"/>
+   <linked-el length="14" name="%4" offset="491" path="%1"/>
+   <linked-el length="16" name="%4" offset="918" path="%1"/>
+   <linked-el length="17" name="%4" offset="1476" path="%1"/>
+   <linked-el length="15" name="%4" offset="1203" path="%1"/>
+   <linked-el length="25" name="%5" offset="1309" path="%1"/>
+   <linked-el length="27" name="%5" offset="1677" path="%1"/>
+   <linked-el length="41" name="%5" offset="1025" path="%1"/>
+   <linked-el length="29" name="%5" offset="1536" path="%1"/>
+   <linked-el length="24" name="%5" offset="595" path="%1"/>
+   <linked-el length="26" name="%5" offset="819" path="%1"/>
+   <linked-el length="27" name="%5" offset="1571" path="%1"/>
   </el>
  </validation>
  <aliases>
   <alias path="/01-JSF/WebContent/aluno.xhtml" value="%1"/>
-  <alias path="/01-JSF/src/br/com/fiap/entity/Aluno.java" value="%0"/>
-  <alias path="/01-JSF/src/br/com/fiap/bean/AlunoBean.java" value="%2"/>
-  <alias path="alunoBean" value="%3"/>
+  <alias path="a" value="%0"/>
+  <alias path="/01-JSF/src/br/com/fiap/entity/Aluno.java" value="%2"/>
+  <alias path="/01-JSF/src/br/com/fiap/bean/AlunoBean.java" value="%3"/>
+  <alias path="/01-JSF/src/aluno_pt_BR.properties" value="%4"/>
+  <alias path="alunoBean" value="%5"/>
  </aliases>
  <includes/>
  <uris>

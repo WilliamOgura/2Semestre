@@ -12,4 +12,10 @@ public class AlunoDAOImpl extends GenericDAOImpl<Aluno, Integer>
 		super(em);
 	}
 
+	@Override
+	public boolean validarEmailExistente(String email) {
+		return em.createQuery("select count(a) from Aluno a where a.email = :e",Long.class)
+				.setParameter("e", email).getSingleResult()>0;
+	}
+
 }
