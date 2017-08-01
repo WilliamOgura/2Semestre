@@ -1,0 +1,23 @@
+package br.com.fiap.bean;
+
+import javax.faces.bean.ManagedBean;
+
+import br.com.fiap.entity.Aluno;
+
+@ManagedBean
+public class AlunoBean {
+
+	private Aluno aluno;
+
+	
+	public Aluno getAluno() {
+		return aluno;
+	}
+
+	public void setAluno(Aluno aluno) {
+		this.aluno = aluno;
+	}
+	
+	
+	
+}

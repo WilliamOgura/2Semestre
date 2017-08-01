@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+	<h2>Aluno</h2>
+</h:head> 
+<body> 
+<h:form>
+	<div>
+		<h:outputLabel value="RM" for="rm"/>
+		<h:inputText value="" id=""/>
+	</div>
+	<div>
+		<h:outputLabel value="Nome" for="nome"/>
+		<h:inputText value="" id="nome"/>
+	</div>
+	<div>
+		<h:outputLabel value="DataNasc" for="dataNasc"/>
+		<h:inputText value="" id="dataNasc"/>
+	</div>
+	<div>
+		<h:outputLabel value="CPF" for="cpf"/>
+		<h:inputText value="" id="cpf"/>
+	</div>
+	<div>
+		<h:outputLabel value="Email" for="email"/>
+		<h:inputText value="" id="email"/>
+	</div>			
+
+</h:form>
+
+</body> 
+</html>

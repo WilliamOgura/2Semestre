@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<h2>Cadastro de Aluno</h2>
+</h:head>
+<body>
+	<h:form>
+		<h:panelGrid columns="2">
+			<div>
+				<h:outputLabel value="RM" for="rm" />
+				<h:inputText value="#{}" id="" />
+			</div>
+			<div>
+				<h:outputLabel value="Nome" for="nome" />
+				<h:inputText value="" id="nome" />
+			</div>
+			<div>
+				<h:outputLabel value="Data Nascimento" for="dt" />
+					<h:inputText value="" id="dt">
+						<f:convertDateTime pattern="dd/MM/yyyy"/>
+					</h:inputText>
+			</div>
+			<div>
+				<h:outputLabel value="CPF" for="cpf" />
+				<h:inputText value="" id="cpf" />
+			</div>
+			<div>
+				<h:outputLabel value="Email" for="email" />
+				<h:inputText value="" id="email" />
+			</div>
+			<div>
+				<h:commandButton action="" value="Cadastrar" />
+			</div>
+
+		</h:panelGrid>
+	</h:form>
+
+</body>
+</html>
