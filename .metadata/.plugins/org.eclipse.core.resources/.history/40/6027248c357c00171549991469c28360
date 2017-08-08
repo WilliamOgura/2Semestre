@@ -1,0 +1,20 @@
+package br.com.fiap.bean;
+
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+
+import br.com.fiap.bo.AlunoBO;
+import br.com.fiap.entity.Aluno;
+
+public class ListaAlunoBean {
+
+	private List<Aluno> alunos;
+	private AlunoBO bo;
+	
+	@ManagedBean
+	public void init(){
+		bo = new AlunoBO();
+		alunos = bo.listar();
+	}
+}

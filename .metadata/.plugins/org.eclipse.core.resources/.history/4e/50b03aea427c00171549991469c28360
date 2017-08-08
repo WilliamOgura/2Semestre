@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"> 
+
+<ui:composition template="_template.xhtml">
+	<ui:define name="conteudo">
+	<p:messages errorClass="alert alert-danger" infoClass="alert alert-success"/>
+		
+		
+			<p:panel header = "Lista de Alunos">
+				<h:form>
+					<h:panelGrid>
+						<p:outputLabel for="nome" value="Nome"></p:outputLabel>
+						<p:inputText value="#{listaAlunoBean.nome}" id="nome"/>
+						<p:commandButton action="#{listaAlunoBean.buscar}" value="Buscar" update="tabela"></p:commandButton>
+					</h:panelGrid>
+				</h:form>
+				
+				
+		<p:dataTable id="tabela" paginatorPosition="bottom" rows="2" value="#{listaAlunoBean.alunos}" var="a" styleClass="table">
+			<p:column headerText="RM">					
+					#{a.rm}
+			</p:column>
+			
+			<p:column headerText="Nome">				
+					#{a.nome}
+			</p:column>
+			
+			<p:column headerText="E-mail">			
+					#{a.email}
+			</p:column>
+			
+			<p:column headerText="Data de Nascimento">
+								
+						<p:outputLabel value="#{a.dataNascimento.time}"> 
+					 <f:convertDateTime pattern="dd/MM/yyyy"/>
+					 </p:outputLabel>
+					
+			</p:column>
+			
+			<p:column headerText="CPF">						
+					#{a.cpf}
+			</p:column>
+			
+			<p:column headerText="Rating">					
+			<p:rating value="#{a.rating}" readonly ="true"/>
+			</p:column>
+		
+		
+		
+		
+		</p:dataTable>
+	</ui:define>	
+</ui:composition>
+</html>

@@ -55,3 +55,237 @@ ago 01, 2017 09:38:40.44 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/
 ago 01, 2017 09:38:40.44 
 ago 01, 2017 09:40:23.04 1501591223043	addons.xpi	WARN	Add-on fxos_2_2_simulator@mozilla.org is not correctly signed.
 ago 01, 2017 09:42:26.51 1501591346521	addons.xpi	WARN	Add-on fxos_2_2_simulator@mozilla.org is not correctly signed.
+
+ago 08, 2017 08:42:59.48 NEW SESSION
+ago 08, 2017 08:42:59.48 1502192579482	addons.xpi	WARN	Exception running bootstrap method startup on firebug@software.joehewitt.com: TypeError: FirebugGCLICommands is undefined (resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/perfil-aluno/extensions/firebug@software.joehewitt.com.xpi!/bootstrap.js:78:5) JS Stack trace: startup@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/perfil-aluno/extensions/firebug@bootstrap.js:78:5 < this.XPIProvider.callBootstrapMethod@XPIProvider.jsm:4785:9 < this.XPIProvider.startup@XPIProvider.jsm:2760:13 < callProvider@AddonManager.jsm:236:12 < _startProvider@AddonManager.jsm:787:5 < AddonManagerInternal.startup@AddonManager.jsm:971:9 < this.AddonManagerPrivate.startup@AddonManager.jsm:2965:5 < amManager.prototype.observe@addonManager.js:71:9
+ago 08, 2017 08:53:02.50 1502193182503	addons.xpi	WARN	Add-on r2d2b2g@mozilla.org is not correctly signed.
+ago 08, 2017 08:53:03.51 1502193183519	addons.update-checker	WARN	Update manifest for e10srollout@mozilla.org did not contain an updates property
+ago 08, 2017 08:53:03.69 1502193183693	addons.update-checker	WARN	Update manifest for firefox@getpocket.com did not contain an updates property
+ago 08, 2017 08:53:03.70 1502193183705	addons.update-checker	WARN	Update manifest for webcompat@mozilla.org did not contain an updates property
+ago 08, 2017 08:53:03.71 1502193183717	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+ago 08, 2017 08:53:52.85 console.error: r2d2b2g: 
+ago 08, 2017 08:53:52.88   Unable to load gcli.jsm
+ago 08, 2017 08:53:52.88 console.error: r2d2b2g: 
+ago 08, 2017 08:53:52.88   Message: ReferenceError: gcli is not defined
+ago 08, 2017 08:53:52.88   Stack:
+ago 08, 2017 08:53:52.88     @resource://r2d2b2g-at-mozilla-dot-org/gcli/lib/gcli.js:23:1
+ago 08, 2017 08:53:52.88 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 08:53:52.88 @resource://r2d2b2g-at-mozilla-dot-org/r2d2b2g/lib/main.js:18:14
+ago 08, 2017 08:53:52.88 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 08:53:52.88 run@resource://gre/modules/commonjs/sdk/addon/runner.js:147:19
+ago 08, 2017 08:53:52.88 startup/</<@resource://gre/modules/commonjs/sdk/addon/runner.js:87:9
+ago 08, 2017 08:53:52.88 Handler.prototype.process@resource://gre/modules/Promise-backend.js:937:23
+ago 08, 2017 08:53:52.88 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise-backend.js:816:7
+ago 08, 2017 08:53:52.88 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise-backend.js:750:11
+ago 08, 2017 08:53:52.88 
+ago 08, 2017 08:53:52.88 *************************
+ago 08, 2017 08:53:52.89 A coding exception was thrown in a Promise resolution callback.
+ago 08, 2017 08:53:52.89 See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+ago 08, 2017 08:53:52.89 
+ago 08, 2017 08:53:52.89 Full message: ReferenceError: gcli is not defined
+ago 08, 2017 08:53:52.89 Full stack: @resource://r2d2b2g-at-mozilla-dot-org/gcli/lib/gcli.js:23:1
+ago 08, 2017 08:53:52.89 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 08:53:52.89 @resource://r2d2b2g-at-mozilla-dot-org/r2d2b2g/lib/main.js:18:14
+ago 08, 2017 08:53:52.89 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 08:53:52.89 run@resource://gre/modules/commonjs/sdk/addon/runner.js:147:19
+ago 08, 2017 08:53:52.89 startup/</<@resource://gre/modules/commonjs/sdk/addon/runner.js:87:9
+ago 08, 2017 08:53:52.89 Handler.prototype.process@resource://gre/modules/Promise-backend.js:937:23
+ago 08, 2017 08:53:52.89 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise-backend.js:816:7
+ago 08, 2017 08:53:52.89 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise-backend.js:750:11
+ago 08, 2017 08:53:52.89 
+ago 08, 2017 08:53:52.89 *************************
+ago 08, 2017 08:53:52.89 console.error: r2d2b2g: 
+ago 08, 2017 08:53:52.89   Message: ReferenceError: gcli is not defined
+ago 08, 2017 08:53:52.89   Stack:
+ago 08, 2017 08:53:52.89     @resource://r2d2b2g-at-mozilla-dot-org/gcli/lib/gcli.js:23:1
+ago 08, 2017 08:53:52.89 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 08:53:52.89 @resource://r2d2b2g-at-mozilla-dot-org/r2d2b2g/lib/main.js:18:14
+ago 08, 2017 08:53:52.89 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 08:53:52.89 run@resource://gre/modules/commonjs/sdk/addon/runner.js:147:19
+ago 08, 2017 08:53:52.89 startup/</<@resource://gre/modules/commonjs/sdk/addon/runner.js:87:9
+ago 08, 2017 08:53:52.89 Handler.prototype.process@resource://gre/modules/Promise-backend.js:937:23
+ago 08, 2017 08:53:52.89 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise-backend.js:816:7
+ago 08, 2017 08:53:52.89 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise-backend.js:750:11
+ago 08, 2017 08:53:52.89 
+ago 08, 2017 08:55:03.71 1502193303714	addons.xpi	WARN	Add-on fxos_2_2_simulator@mozilla.org is not correctly signed.
+ago 08, 2017 08:57:07.62 1502193427625	addons.xpi	WARN	Add-on fxos_2_2_simulator@mozilla.org is not correctly signed.
+ago 08, 2017 09:08:52.22 1502194132221	addons.xpi	WARN	Exception running bootstrap method startup on firebug@software.joehewitt.com: TypeError: FirebugGCLICommands is undefined (resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/perfil-aluno/extensions/firebug@software.joehewitt.com.xpi!/bootstrap.js:78:5) JS Stack trace: startup@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/perfil-aluno/extensions/firebug@bootstrap.js:78:5 < this.XPIProvider.callBootstrapMethod@XPIProvider.jsm:4785:9 < this.XPIProvider.startup@XPIProvider.jsm:2760:13 < callProvider@AddonManager.jsm:236:12 < _startProvider@AddonManager.jsm:787:5 < AddonManagerInternal.startup@AddonManager.jsm:971:9 < this.AddonManagerPrivate.startup@AddonManager.jsm:2965:5 < amManager.prototype.observe@addonManager.js:71:9
+ago 08, 2017 09:08:53.97 console.error: r2d2b2g: 
+ago 08, 2017 09:08:53.98   Unable to load gcli.jsm
+ago 08, 2017 09:08:53.98 console.error: r2d2b2g: 
+ago 08, 2017 09:08:53.98   Message: ReferenceError: gcli is not defined
+ago 08, 2017 09:08:53.98   Stack:
+ago 08, 2017 09:08:53.98     @resource://r2d2b2g-at-mozilla-dot-org/gcli/lib/gcli.js:23:1
+ago 08, 2017 09:08:53.98 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 09:08:53.98 @resource://r2d2b2g-at-mozilla-dot-org/r2d2b2g/lib/main.js:18:14
+ago 08, 2017 09:08:53.98 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 09:08:53.98 run@resource://gre/modules/commonjs/sdk/addon/runner.js:147:19
+ago 08, 2017 09:08:53.98 startup/</<@resource://gre/modules/commonjs/sdk/addon/runner.js:87:9
+ago 08, 2017 09:08:53.98 Handler.prototype.process@resource://gre/modules/Promise-backend.js:937:23
+ago 08, 2017 09:08:53.98 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise-backend.js:816:7
+ago 08, 2017 09:08:53.98 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise-backend.js:750:11
+ago 08, 2017 09:08:53.98 
+ago 08, 2017 09:08:53.98 *************************
+ago 08, 2017 09:08:53.98 A coding exception was thrown in a Promise resolution callback.
+ago 08, 2017 09:08:53.98 See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+ago 08, 2017 09:08:53.98 
+ago 08, 2017 09:08:53.98 Full message: ReferenceError: gcli is not defined
+ago 08, 2017 09:08:53.98 Full stack: @resource://r2d2b2g-at-mozilla-dot-org/gcli/lib/gcli.js:23:1
+ago 08, 2017 09:08:53.98 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 09:08:53.98 @resource://r2d2b2g-at-mozilla-dot-org/r2d2b2g/lib/main.js:18:14
+ago 08, 2017 09:08:53.98 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 09:08:53.98 run@resource://gre/modules/commonjs/sdk/addon/runner.js:147:19
+ago 08, 2017 09:08:53.98 startup/</<@resource://gre/modules/commonjs/sdk/addon/runner.js:87:9
+ago 08, 2017 09:08:53.98 Handler.prototype.process@resource://gre/modules/Promise-backend.js:937:23
+ago 08, 2017 09:08:53.98 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise-backend.js:816:7
+ago 08, 2017 09:08:53.98 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise-backend.js:750:11
+ago 08, 2017 09:08:53.98 
+ago 08, 2017 09:08:53.98 *************************
+ago 08, 2017 09:08:53.98 console.error: r2d2b2g: 
+ago 08, 2017 09:08:53.98   Message: ReferenceError: gcli is not defined
+ago 08, 2017 09:08:53.98   Stack:
+ago 08, 2017 09:08:53.98     @resource://r2d2b2g-at-mozilla-dot-org/gcli/lib/gcli.js:23:1
+ago 08, 2017 09:08:53.98 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 09:08:53.98 @resource://r2d2b2g-at-mozilla-dot-org/r2d2b2g/lib/main.js:18:14
+ago 08, 2017 09:08:53.98 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 09:08:53.98 run@resource://gre/modules/commonjs/sdk/addon/runner.js:147:19
+ago 08, 2017 09:08:53.98 startup/</<@resource://gre/modules/commonjs/sdk/addon/runner.js:87:9
+ago 08, 2017 09:08:53.98 Handler.prototype.process@resource://gre/modules/Promise-backend.js:937:23
+ago 08, 2017 09:08:53.98 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise-backend.js:816:7
+ago 08, 2017 09:08:53.98 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise-backend.js:750:11
+ago 08, 2017 09:08:53.98 
+ago 08, 2017 09:36:02.63 1502195762637	addons.xpi	WARN	Exception running bootstrap method startup on firebug@software.joehewitt.com: TypeError: FirebugGCLICommands is undefined (resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/perfil-aluno/extensions/firebug@software.joehewitt.com.xpi!/bootstrap.js:78:5) JS Stack trace: startup@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/perfil-aluno/extensions/firebug@bootstrap.js:78:5 < this.XPIProvider.callBootstrapMethod@XPIProvider.jsm:4785:9 < this.XPIProvider.startup@XPIProvider.jsm:2760:13 < callProvider@AddonManager.jsm:236:12 < _startProvider@AddonManager.jsm:787:5 < AddonManagerInternal.startup@AddonManager.jsm:971:9 < this.AddonManagerPrivate.startup@AddonManager.jsm:2965:5 < amManager.prototype.observe@addonManager.js:71:9
+ago 08, 2017 09:36:04.37 console.error: r2d2b2g: 
+ago 08, 2017 09:36:04.37   Unable to load gcli.jsm
+ago 08, 2017 09:36:04.37 console.error: r2d2b2g: 
+ago 08, 2017 09:36:04.37   Message: ReferenceError: gcli is not defined
+ago 08, 2017 09:36:04.37   Stack:
+ago 08, 2017 09:36:04.37     @resource://r2d2b2g-at-mozilla-dot-org/gcli/lib/gcli.js:23:1
+ago 08, 2017 09:36:04.37 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 09:36:04.37 @resource://r2d2b2g-at-mozilla-dot-org/r2d2b2g/lib/main.js:18:14
+ago 08, 2017 09:36:04.37 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 09:36:04.37 run@resource://gre/modules/commonjs/sdk/addon/runner.js:147:19
+ago 08, 2017 09:36:04.37 startup/</<@resource://gre/modules/commonjs/sdk/addon/runner.js:87:9
+ago 08, 2017 09:36:04.37 Handler.prototype.process@resource://gre/modules/Promise-backend.js:937:23
+ago 08, 2017 09:36:04.37 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise-backend.js:816:7
+ago 08, 2017 09:36:04.37 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise-backend.js:750:11
+ago 08, 2017 09:36:04.37 
+ago 08, 2017 09:36:04.37 *************************
+ago 08, 2017 09:36:04.37 A coding exception was thrown in a Promise resolution callback.
+ago 08, 2017 09:36:04.37 See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+ago 08, 2017 09:36:04.37 
+ago 08, 2017 09:36:04.37 Full message: ReferenceError: gcli is not defined
+ago 08, 2017 09:36:04.37 Full stack: @resource://r2d2b2g-at-mozilla-dot-org/gcli/lib/gcli.js:23:1
+ago 08, 2017 09:36:04.37 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 09:36:04.37 @resource://r2d2b2g-at-mozilla-dot-org/r2d2b2g/lib/main.js:18:14
+ago 08, 2017 09:36:04.37 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 09:36:04.37 run@resource://gre/modules/commonjs/sdk/addon/runner.js:147:19
+ago 08, 2017 09:36:04.37 startup/</<@resource://gre/modules/commonjs/sdk/addon/runner.js:87:9
+ago 08, 2017 09:36:04.37 Handler.prototype.process@resource://gre/modules/Promise-backend.js:937:23
+ago 08, 2017 09:36:04.37 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise-backend.js:816:7
+ago 08, 2017 09:36:04.37 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise-backend.js:750:11
+ago 08, 2017 09:36:04.37 
+ago 08, 2017 09:36:04.37 *************************
+ago 08, 2017 09:36:04.37 console.error: r2d2b2g: 
+ago 08, 2017 09:36:04.37   Message: ReferenceError: gcli is not defined
+ago 08, 2017 09:36:04.37   Stack:
+ago 08, 2017 09:36:04.37     @resource://r2d2b2g-at-mozilla-dot-org/gcli/lib/gcli.js:23:1
+ago 08, 2017 09:36:04.37 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 09:36:04.37 @resource://r2d2b2g-at-mozilla-dot-org/r2d2b2g/lib/main.js:18:14
+ago 08, 2017 09:36:04.37 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 09:36:04.37 run@resource://gre/modules/commonjs/sdk/addon/runner.js:147:19
+ago 08, 2017 09:36:04.37 startup/</<@resource://gre/modules/commonjs/sdk/addon/runner.js:87:9
+ago 08, 2017 09:36:04.37 Handler.prototype.process@resource://gre/modules/Promise-backend.js:937:23
+ago 08, 2017 09:36:04.37 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise-backend.js:816:7
+ago 08, 2017 09:36:04.37 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise-backend.js:750:11
+ago 08, 2017 09:36:04.37 
+ago 08, 2017 09:43:20.12 1502196200128	addons.xpi	WARN	Exception running bootstrap method startup on firebug@software.joehewitt.com: TypeError: FirebugGCLICommands is undefined (resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/perfil-aluno/extensions/firebug@software.joehewitt.com.xpi!/bootstrap.js:78:5) JS Stack trace: startup@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/perfil-aluno/extensions/firebug@bootstrap.js:78:5 < this.XPIProvider.callBootstrapMethod@XPIProvider.jsm:4785:9 < this.XPIProvider.startup@XPIProvider.jsm:2760:13 < callProvider@AddonManager.jsm:236:12 < _startProvider@AddonManager.jsm:787:5 < AddonManagerInternal.startup@AddonManager.jsm:971:9 < this.AddonManagerPrivate.startup@AddonManager.jsm:2965:5 < amManager.prototype.observe@addonManager.js:71:9
+ago 08, 2017 09:43:21.87 console.error: r2d2b2g: 
+ago 08, 2017 09:43:21.87   Unable to load gcli.jsm
+ago 08, 2017 09:43:21.87 console.error: r2d2b2g: 
+ago 08, 2017 09:43:21.87   Message: ReferenceError: gcli is not defined
+ago 08, 2017 09:43:21.87   Stack:
+ago 08, 2017 09:43:21.87     @resource://r2d2b2g-at-mozilla-dot-org/gcli/lib/gcli.js:23:1
+ago 08, 2017 09:43:21.87 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 09:43:21.87 @resource://r2d2b2g-at-mozilla-dot-org/r2d2b2g/lib/main.js:18:14
+ago 08, 2017 09:43:21.87 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 09:43:21.88 run@resource://gre/modules/commonjs/sdk/addon/runner.js:147:19
+ago 08, 2017 09:43:21.88 startup/</<@resource://gre/modules/commonjs/sdk/addon/runner.js:87:9
+ago 08, 2017 09:43:21.88 Handler.prototype.process@resource://gre/modules/Promise-backend.js:937:23
+ago 08, 2017 09:43:21.88 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise-backend.js:816:7
+ago 08, 2017 09:43:21.88 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise-backend.js:750:11
+ago 08, 2017 09:43:21.88 
+ago 08, 2017 09:43:21.88 *************************
+ago 08, 2017 09:43:21.88 A coding exception was thrown in a Promise resolution callback.
+ago 08, 2017 09:43:21.88 See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+ago 08, 2017 09:43:21.88 
+ago 08, 2017 09:43:21.88 Full message: ReferenceError: gcli is not defined
+ago 08, 2017 09:43:21.88 Full stack: @resource://r2d2b2g-at-mozilla-dot-org/gcli/lib/gcli.js:23:1
+ago 08, 2017 09:43:21.88 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 09:43:21.88 @resource://r2d2b2g-at-mozilla-dot-org/r2d2b2g/lib/main.js:18:14
+ago 08, 2017 09:43:21.88 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 09:43:21.88 run@resource://gre/modules/commonjs/sdk/addon/runner.js:147:19
+ago 08, 2017 09:43:21.88 startup/</<@resource://gre/modules/commonjs/sdk/addon/runner.js:87:9
+ago 08, 2017 09:43:21.88 Handler.prototype.process@resource://gre/modules/Promise-backend.js:937:23
+ago 08, 2017 09:43:21.88 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise-backend.js:816:7
+ago 08, 2017 09:43:21.88 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise-backend.js:750:11
+ago 08, 2017 09:43:21.88 
+ago 08, 2017 09:43:21.88 *************************
+ago 08, 2017 09:43:21.88 console.error: r2d2b2g: 
+ago 08, 2017 09:43:21.88   Message: ReferenceError: gcli is not defined
+ago 08, 2017 09:43:21.88   Stack:
+ago 08, 2017 09:43:21.88     @resource://r2d2b2g-at-mozilla-dot-org/gcli/lib/gcli.js:23:1
+ago 08, 2017 09:43:21.88 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 09:43:21.88 @resource://r2d2b2g-at-mozilla-dot-org/r2d2b2g/lib/main.js:18:14
+ago 08, 2017 09:43:21.88 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 09:43:21.88 run@resource://gre/modules/commonjs/sdk/addon/runner.js:147:19
+ago 08, 2017 09:43:21.88 startup/</<@resource://gre/modules/commonjs/sdk/addon/runner.js:87:9
+ago 08, 2017 09:43:21.88 Handler.prototype.process@resource://gre/modules/Promise-backend.js:937:23
+ago 08, 2017 09:43:21.88 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise-backend.js:816:7
+ago 08, 2017 09:43:21.88 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise-backend.js:750:11
+ago 08, 2017 09:43:21.88 
+ago 08, 2017 11:42:54.45 1502203374450	addons.xpi	WARN	Exception running bootstrap method startup on firebug@software.joehewitt.com: TypeError: FirebugGCLICommands is undefined (resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/perfil-aluno/extensions/firebug@software.joehewitt.com.xpi!/bootstrap.js:78:5) JS Stack trace: startup@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/perfil-aluno/extensions/firebug@bootstrap.js:78:5 < this.XPIProvider.callBootstrapMethod@XPIProvider.jsm:4785:9 < this.XPIProvider.startup@XPIProvider.jsm:2760:13 < callProvider@AddonManager.jsm:236:12 < _startProvider@AddonManager.jsm:787:5 < AddonManagerInternal.startup@AddonManager.jsm:971:9 < this.AddonManagerPrivate.startup@AddonManager.jsm:2965:5 < amManager.prototype.observe@addonManager.js:71:9
+ago 08, 2017 11:42:56.17 console.error: r2d2b2g: 
+ago 08, 2017 11:42:56.17   Unable to load gcli.jsm
+ago 08, 2017 11:42:56.17 console.error: r2d2b2g: 
+ago 08, 2017 11:42:56.17   Message: ReferenceError: gcli is not defined
+ago 08, 2017 11:42:56.17   Stack:
+ago 08, 2017 11:42:56.17     @resource://r2d2b2g-at-mozilla-dot-org/gcli/lib/gcli.js:23:1
+ago 08, 2017 11:42:56.17 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 11:42:56.17 @resource://r2d2b2g-at-mozilla-dot-org/r2d2b2g/lib/main.js:18:14
+ago 08, 2017 11:42:56.17 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 11:42:56.17 run@resource://gre/modules/commonjs/sdk/addon/runner.js:147:19
+ago 08, 2017 11:42:56.17 startup/</<@resource://gre/modules/commonjs/sdk/addon/runner.js:87:9
+ago 08, 2017 11:42:56.17 Handler.prototype.process@resource://gre/modules/Promise-backend.js:937:23
+ago 08, 2017 11:42:56.17 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise-backend.js:816:7
+ago 08, 2017 11:42:56.17 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise-backend.js:750:11
+ago 08, 2017 11:42:56.17 
+ago 08, 2017 11:42:56.18 *************************
+ago 08, 2017 11:42:56.18 A coding exception was thrown in a Promise resolution callback.
+ago 08, 2017 11:42:56.18 See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+ago 08, 2017 11:42:56.18 
+ago 08, 2017 11:42:56.18 Full message: ReferenceError: gcli is not defined
+ago 08, 2017 11:42:56.18 Full stack: @resource://r2d2b2g-at-mozilla-dot-org/gcli/lib/gcli.js:23:1
+ago 08, 2017 11:42:56.18 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 11:42:56.18 @resource://r2d2b2g-at-mozilla-dot-org/r2d2b2g/lib/main.js:18:14
+ago 08, 2017 11:42:56.18 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 11:42:56.18 run@resource://gre/modules/commonjs/sdk/addon/runner.js:147:19
+ago 08, 2017 11:42:56.18 startup/</<@resource://gre/modules/commonjs/sdk/addon/runner.js:87:9
+ago 08, 2017 11:42:56.18 Handler.prototype.process@resource://gre/modules/Promise-backend.js:937:23
+ago 08, 2017 11:42:56.18 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise-backend.js:816:7
+ago 08, 2017 11:42:56.18 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise-backend.js:750:11
+ago 08, 2017 11:42:56.18 
+ago 08, 2017 11:42:56.18 *************************
+ago 08, 2017 11:42:56.18 console.error: r2d2b2g: 
+ago 08, 2017 11:42:56.18   Message: ReferenceError: gcli is not defined
+ago 08, 2017 11:42:56.18   Stack:
+ago 08, 2017 11:42:56.18     @resource://r2d2b2g-at-mozilla-dot-org/gcli/lib/gcli.js:23:1
+ago 08, 2017 11:42:56.18 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 11:42:56.18 @resource://r2d2b2g-at-mozilla-dot-org/r2d2b2g/lib/main.js:18:14
+ago 08, 2017 11:42:56.18 CuddlefishLoader/options<.load@resource://gre/modules/commonjs/sdk/loader/cuddlefish.js:79:18
+ago 08, 2017 11:42:56.18 run@resource://gre/modules/commonjs/sdk/addon/runner.js:147:19
+ago 08, 2017 11:42:56.18 startup/</<@resource://gre/modules/commonjs/sdk/addon/runner.js:87:9
+ago 08, 2017 11:42:56.18 Handler.prototype.process@resource://gre/modules/Promise-backend.js:937:23
+ago 08, 2017 11:42:56.18 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise-backend.js:816:7
+ago 08, 2017 11:42:56.18 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise-backend.js:750:11
+ago 08, 2017 11:42:56.18 

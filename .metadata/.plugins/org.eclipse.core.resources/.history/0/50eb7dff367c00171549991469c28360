@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"> 
+
+<ui:composition template="_template.xhtml">
+	<ui:define name="conteudo">
+	<p:messages errorClass="alert alert-danger" infoClass="alert alert-success"/>
+		
+		<p:dataTable value="#{listaAlunoBean.alunos}" var="a" styleClass="table">
+			
+			<p:column>
+					<f:facet name="header">RM</f:facet>				
+					#{a.rm}
+			</p:column>
+			<p:column>
+					<f:facet name="header">Nome</f:facet>				
+					#{a.nome}
+			</p:column>
+			<p:column>
+					<f:facet name="header">Email</f:facet>				
+					#{a.email}
+			</p:column>
+			<p:column>
+					<f:facet name="header">Data de Nascimento</f:facet>				
+						<p:outputLabel value="#{a.dataNascimento.time}"> 
+					 <f:convertDateTime pattern="dd/MM/yyyy"/>
+					 </p:outputLabel>
+					
+			</p:column>
+			<p:column>
+					<f:facet name="header">CPF </f:facet>				
+					#{a.cpf}
+			</p:column>
+			<p:column>
+					<f:facet name="header">Rating</f:facet>				
+					#{a.rating}
+			</p:column>
+		
+		
+		
+		
+		</p:dataTable>
+	</ui:define>	
+</ui:composition>
+</html>

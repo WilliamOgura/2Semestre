@@ -1,0 +1,14 @@
+package br.com.fiap.bean;
+
+import javax.faces.bean.ManagedBean;
+
+import br.com.fiap.bo.AlunoBO;
+import br.com.fiap.entity.Aluno;
+
+@ManagedBean
+public class AlunoBean {
+	
+	private Aluno aluno;
+	private AlunoBO bo;
+
+}
