@@ -1,0 +1,74 @@
+package br.com.fiap.bean;
+
+import javax.annotation.PostConstruct;
+import javax.faces.bean.ManagedBean;
+
+import org.primefaces.model.chart.AxisType;
+import org.primefaces.model.chart.CategoryAxis;
+import org.primefaces.model.chart.LineChartModel;
+import org.primefaces.model.chart.LineChartSeries;
+import org.primefaces.model.chart.PieChartModel;
+
+import br.com.fiap.bo.AlunoBO;
+
+@ManagedBean
+public class GraficoBean {
+
+	private PieChartModel pizza;
+	private AlunoBO bo;
+	private LineChartModel grafico;
+
+	@PostConstruct
+
+	private void init() {
+		grafico = new LineChartModel();
+		grafico.setLegendPosition("e");
+		grafico.setTitle("Alunos por Mês");
+		grafico.getAxes().put(AxisType.X, new CategoryAxis("Meses"));
+		pizza = new PieChartModel();
+
+		LineChartSeries linha = new LineChartSeries();
+		bo = new AlunoBO();
+
+		linha.setLabel("Alunos");
+		linha.set("Janeiro", bo.contarPorMes(1));
+		linha.set("Fevereiro", bo.contarPorMes(2));
+		linha.set("Março", bo.contarPorMes(3));
+		linha.set("Abril", bo.contarPorMes(4));
+		linha.set("Maio", bo.contarPorMes(5));
+		linha.set("Junho", bo.contarPorMes(6));
+		linha.set("Julho", bo.contarPorMes(7));
+		linha.set("Agosto", bo.contarPorMes(8));
+		linha.set("Setembro", bo.contarPorMes(9));
+		linha.set("Outubro", bo.contarPorMes(10));
+		linha.set("Novembro", bo.contarPorMes(11));
+		linha.set("Dezembro", bo.contarPorMes(12));
+
+		grafico.addSeries(linha);
+
+		pizza.set("Ótimo", bo.contarPorRating(7, 10));
+		pizza.set("Regular", bo.contarPorRating(5, 6));
+		pizza.set("Horrível Se mata", bo.contarPorRating(0, 4));
+		pizza.setShowDataLabels(true);
+		pizza.setLegendPosition("e");
+
+	}
+
+	public PieChartModel getPizza() {
+		return pizza;
+
+	}
+
+	public void setPizza(PieChartModel pizza) {
+		this.pizza = pizza;
+
+	}
+
+	public LineChartModel getGrafico() {
+		return grafico;
+	}
+
+	public void setGrafico(LineChartModel grafico) {
+		this.grafico = grafico;
+	}
+}

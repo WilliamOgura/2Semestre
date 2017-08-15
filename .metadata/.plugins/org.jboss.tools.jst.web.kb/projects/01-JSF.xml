@@ -98,8 +98,6 @@
   <path value="D:/2Semestre/Digital/01-JSF/WebContent/WEB-INF/lib/jsf-api-2.2.14.jar"/>
  </paths>
  <validation>
-  <core validator-id="jsf-verification"/>
-  <core validator-id="jboss.jsf.core"/>
   <el>
    <linked-el length="15" name="%0" offset="382" path="%1"/>
    <linked-el length="16" name="%0" offset="764" path="%1"/>

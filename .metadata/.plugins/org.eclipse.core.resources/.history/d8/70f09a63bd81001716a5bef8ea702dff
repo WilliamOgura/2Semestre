@@ -1,0 +1,33 @@
+package br.com.fiap.bean;
+
+import javax.annotation.PostConstruct;
+import javax.faces.bean.ManagedBean;
+
+import org.primefaces.model.chart.PieChartModel;
+
+@ManagedBean
+public class GraficoBean {
+
+	private PieChartModel pizza;
+
+	@PostConstruct
+	private void init(){
+		pizza = new PieChartModel();
+		pizza.set("Ótimo", 10);
+		pizza.set("Regular", 11);
+		pizza.set("Horrível Se mata", 2);
+		pizza.setShowDataLabels(true);
+		pizza.setLegendPosition("e");
+	}
+	
+	public PieChartModel getPizza() {
+		return pizza;
+	
+	}
+
+	public void setPizza(PieChartModel pizza) {
+		this.pizza = pizza;
+
+	}
+
+}

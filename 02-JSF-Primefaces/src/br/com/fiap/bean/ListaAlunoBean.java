@@ -3,24 +3,45 @@ package br.com.fiap.bean;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
+import javax.faces.context.FacesContext;
 
 import br.com.fiap.bo.AlunoBO;
-import br.com.fiap.dao.AlunoDAO;
 import br.com.fiap.entity.Aluno;
 @ManagedBean
+@ViewScoped
 public class ListaAlunoBean {
 
 	private List<Aluno> alunos;
 	private AlunoBO bo;
 	private String nome;
-	private AlunoDAO dao;
+	private int rm;
+	
+	public String excluir(){
+		FacesMessage msg;
+		try {
+			bo.remover(rm);
+			msg = new FacesMessage("Removido!!");
+		} catch (Exception e) {
+			e.printStackTrace();
+			msg =new FacesMessage("Erro");
+		}
+		FacesContext.getCurrentInstance().addMessage(null, msg);
+		FacesContext.getCurrentInstance().getExternalContext().getFlash().setKeepMessages(true);
+		return "lista-aluno?faces-redirect=true";
+		
+	}
+	
 	
 	@PostConstruct
 	public void init(){
 		bo = new AlunoBO();
 		alunos = bo.listar();
 	}
+	
+	
 
 	public List<String> completaNomeAluno(String nome){
 		System.out.println(nome);
@@ -50,6 +71,18 @@ public class ListaAlunoBean {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+
+
+	public int getRm() {
+		return rm;
+	}
+
+
+
+	public void setRm(int rm) {
+		this.rm = rm;
 	}
 	
 }

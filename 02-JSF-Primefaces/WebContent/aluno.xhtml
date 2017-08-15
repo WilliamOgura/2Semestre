@@ -39,8 +39,14 @@
 
 					<p:outputLabel value="Rating" for="rat"></p:outputLabel>
 					<p:rating value="#{alunoBean.aluno.rating}" id="rat" stars="10" />
-					<p:commandButton value="Salvar" action="#{alunoBean.cadastrar()}"></p:commandButton>
+					
+					<p:commandButton value="Salvar" action="#{alunoBean.cadastrar()}"
+					rendered="#{alunoBean.aluno.rm == 0}"
+					></p:commandButton>
 
+					<p:commandButton value="Alterar"
+						rendered="#{alunoBean.aluno.rm != 0}"
+					 action="#{alunoBean.alterar()}"></p:commandButton>
 				</h:panelGrid>
 			</h:form>
 		</p:panel>

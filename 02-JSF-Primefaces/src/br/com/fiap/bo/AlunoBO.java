@@ -93,6 +93,16 @@ public class AlunoBO {
 		AlunoDAO dao = new AlunoDAOImpl(em);
 		return dao.completaNomeAluno(nome);
 	}
+	public long contarPorRating(int inicio, int fim) {
+		EntityManager em = factory.createEntityManager();
+		AlunoDAO dao = new AlunoDAOImpl(em);
+		return dao.contarPorRating(inicio, fim);
+	}
+	public long contarPorMes(int mes) {
+		EntityManager em = factory.createEntityManager();
+		AlunoDAO dao = new AlunoDAOImpl(em);
+		return dao.contarPorMes(mes);
+	}
 }
 
 

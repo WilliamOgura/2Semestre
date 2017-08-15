@@ -1,0 +1,23 @@
+package br.com.fiap.bean;
+
+import javax.faces.bean.ManagedBean;
+
+import org.primefaces.model.chart.PieChartModel;
+
+@ManagedBean
+public class GraficoBean {
+
+	private PieChartModel pizza;
+
+	
+	public PieChartModel getPizza() {
+		return pizza;
+	
+	}
+
+	public void setPizza(PieChartModel pizza) {
+		this.pizza = pizza;
+
+	}
+
+}
