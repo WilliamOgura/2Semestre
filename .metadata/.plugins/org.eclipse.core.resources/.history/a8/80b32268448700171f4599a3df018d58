@@ -1,0 +1,22 @@
+package br.com.fiap.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import br.com.fiap.model.Atleta;
+
+@Controller
+public class AtletaController {
+
+	@RequestMapping("atleta/cadastrar")
+	public String abrirForm(){
+		return "atleta/cadastro";
+	}
+	
+	//PROCESSAR AS INFORMAÇÕES DO FORMULÁRIO
+	public String processaForm(Atleta atleta){
+		System.out.println(atleta.getNome());
+		System.out.println(atleta.getPeso());
+		System.out.println(atleta.getAltura());
+	}
+}

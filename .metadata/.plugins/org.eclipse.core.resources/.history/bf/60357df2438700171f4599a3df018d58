@@ -1,0 +1,8 @@
+package br.com.fiap.model;
+
+public class Atleta {
+
+	private String nome;
+	private float peso;
+	private float altura;
+}

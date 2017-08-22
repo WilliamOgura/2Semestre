@@ -40,6 +40,17 @@
 					<p:outputLabel value="Rating" for="rat"></p:outputLabel>
 					<p:rating value="#{alunoBean.aluno.rating}" id="rat" stars="10" />
 					
+					<p:graphicImage value="#{alunoBean.imagem}" id="foto" cache="false"/>
+					<p:fileUpload
+						update="foto"
+						fileUploadListener="#{alunoBean.uploadFile}"
+						sizeLimit="5000000"
+						allowTypes="/(\.|\/)(gif|jpe?g|png)$/"
+						auto="false"
+						dragDropSupport="false"
+					/>
+
+					
 					<p:commandButton value="Salvar" action="#{alunoBean.cadastrar()}"
 					rendered="#{alunoBean.aluno.rm == 0}"
 					></p:commandButton>

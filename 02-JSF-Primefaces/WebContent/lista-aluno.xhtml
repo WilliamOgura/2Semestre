@@ -45,9 +45,9 @@
 					#{a.cpf}
 			</p:column>
 				<p:column headerText="Rating">
-					<p:rating value="#{a.rating}" readonly="true" />
+					<p:rating value="#{a.rating}" readonly="true" stars="10"/>
 				</p:column>
-
+		
 		<p:column headerText="Editar">
 			<p:commandButton action="aluno" icon="ui-icon-pencil">
 				<f:setPropertyActionListener value="#{a}" target="#{alunoBean.aluno}" />

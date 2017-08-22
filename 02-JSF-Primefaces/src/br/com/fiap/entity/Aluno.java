@@ -4,6 +4,7 @@ import java.util.Calendar;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 
 @Entity
 public class Aluno {
@@ -20,6 +21,9 @@ public class Aluno {
 	private String email;
 	
 	private int rating;
+	
+	@Lob
+	private byte[] foto;
 
 	public int getRm() {
 		return rm;
@@ -68,6 +72,15 @@ public class Aluno {
 	public void setRating(int rating) {
 		this.rating = rating;
 	}
+
+	public byte[] getFoto() {
+		return foto;
+	}
+
+	public void setFoto(byte[] foto) {
+		this.foto = foto;
+	}
+
 
 
 	
